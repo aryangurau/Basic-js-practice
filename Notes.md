@@ -8,4 +8,13 @@ joining date:2081/04.11
  MERN(MongoDb, Express.js, React.js, Node.js)
 - Syllabus
   - Git and github
-  - 
+  - javascript
+    - variables and Hoisting
+    - Comments
+    - Interactions
+    - Data types
+    - operators
+    - loops
+    - functions
+    - objects
+  
