@@ -20,5 +20,6 @@ alert("This performs sum calculations");
 
 const value1 = parseInt(prompt("enter first number"));
 const value2 = parseInt(prompt("enter second number"));
-
-alert(`The sum of two number is ${value1 + value2}`);
+const sum = value1 + value2;
+console.log({ value1, value2 });
+alert(`The sum of ${value1}  and ${value2} is ${sum}`);
