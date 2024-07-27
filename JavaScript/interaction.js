@@ -21,5 +21,7 @@ alert("This performs sum calculations");
 const value1 = prompt("enter first number");
 const value2 = prompt("enter second number");
 const sum = Number(value1) + Number(value2);
+
 console.log({ value1, value2 });
-alert(`The sum of ${value1}  and ${value2} is ${sum}`);
+
+alert(`The sum of ${value1} and ${value2} is ${sum}`);
