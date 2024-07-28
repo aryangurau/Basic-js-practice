@@ -73,3 +73,33 @@ console.log(newFareheight);
 
 
 */
+
+// write a js program to calculate the area of rectangle
+
+//ES5----------
+// function rectangleArea(l, b) {
+//   return l * b;
+// }
+
+// const length = Number(prompt("enter the length "));
+// const breadth = Number(prompt("enter breadth"));
+// if (isNaN(length, breadth)) {
+//   alert("please enter valid number");
+// }
+// const area = rectangleArea(length, breadth);
+// alert(`the area of rectangle is ${area}`);
+// console.log(`the area of rectangle is ${area}`);
+
+//ES6  using arrow function
+const rectangleArea = (l, b) => {
+  return l * b;
+};
+const l = Number(prompt("enter length"));
+const b = Number(prompt("enter breadth"));
+if (isNaN(l, b)) {
+  alert("enter valid number");
+}
+
+const area = rectangleArea(l, b);
+alert(`the area of rectangle is ${area}`);
+console.log(`the area of rectangle is ${area}`);
