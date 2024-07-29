@@ -6,7 +6,7 @@
 // console.log({ arr });
 
 //method 2
-const arrV1 = [];
+const arrV1 = []; //empty array
 
 //using method 2
 const cars = [
@@ -32,6 +32,7 @@ console.log({ rest });
 //write a js function that sorts the name in ascending order
 
 const peoples = [
+  //created an array and inserted some objects
   { name: "raktim", age: 30 },
   { name: "anjali", age: 18 },
   { name: "paras", age: 25 },
@@ -42,12 +43,3 @@ const ageSorter = (arr) => {
 };
 const result = ageSorter(peoples);
 console.log({ result });
-
-const print = (data) => {
-  console.log(data);
-};
-const parent = (func) => {
-  const data = "aryan";
-  func(data); // it provide output as print(num)
-};
-parent(print); // two functions:one for calling and another function as arguments/paramters
