@@ -15,11 +15,13 @@ const person = {
   gender: "male",
   hasValidLicence: true,
   age: function age() {
+    //function inside object is called method
     //global function  can access variables from outside
     //using es5 function method
     return 2024 - Number(this.dob.split("-")[0]);
   },
   newAge: () => {
+    //function inside object is called method
     //local function can access variables within function
     return 2024 - Number(person.dob.split("-")[0]);
   },
