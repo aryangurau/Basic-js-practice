@@ -128,13 +128,24 @@ const parent = (func) => {
 parent(print); // two functions:one for calling and another function as arguments/paramters
 
 // another exammple of callback function
-function sum(a, b) {
-  console.log(a + b);
-}
-function calculator(a, b, sumCallback) {
-  sumCallback(a, b);
-}
-calculator(5, 5, sum);
+const calculate = (a, b, operation) => {
+  return operation(a, b); //callback
+};
+const subtraction = (a, b) => a - b;
+const subtracted = calculate(3, 8, subtraction);
+console.log(subtracted);
+
+const addition = (a, b) => a + b;
+const added = calculate(3, 8, addition);
+console.log(added);
+
+// callback for string
+const main = (string, string1, callback) => {
+  return callback(string, string1);
+};
+const data1 = (string, string1) => string + string1;
+const data1result = main("Hello", "world", data1);
+console.log(data1result);
 
 // 10. Pure function
 //utility function()
