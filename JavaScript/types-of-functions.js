@@ -127,6 +127,15 @@ const parent = (func) => {
 };
 parent(print); // two functions:one for calling and another function as arguments/paramters
 
+// another exammple of callback function
+function sum(a, b) {
+  console.log(a + b);
+}
+function calculator(a, b, sumCallback) {
+  sumCallback(a, b);
+}
+calculator(5, 5, sum);
+
 // 10. Pure function
 //utility function()
 const upperConverter = (text) => {
