@@ -97,3 +97,20 @@ const circle = {
 };
 console.log(circle.area());
 console.log(circle.perimeter());
+
+const user = {
+  userName: "aryan",
+  price: 300,
+  welcomeMessage: () => {
+    console.log(`Hello,${user.userName}, welcome to our Community`);
+  },
+};
+user.welcomeMessage();
+user.userName = "maichang";
+user.welcomeMessage();
+
+const test = () => {
+  let check = "hello world";
+  return check;
+};
+console.log(test());
